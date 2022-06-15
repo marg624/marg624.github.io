@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Kayla Itsines BBG 1.0</title>
+      <link rel="stylesheet" href="style.css">
+      <script type="text/javascript" src="script.js"></script>
+   </head>
+   <body>
+      <table cellspacing="0" cellpadding="0" width="100%">
+         <tr>
+            <td style="text-align: center;">
+               <div class="mySlides" style="display: block;">
+                  <img src="./workouts/workouts-01.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-02.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-03.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-04.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-05.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-06.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-07.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-08.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-09.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-10.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-11.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-12.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-13.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-14.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-15.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-16.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-17.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-18.jpg" style="max-width: 600px">
+               </div>
+               <div class="mySlides">
+                  <img src="./workouts/workouts-19.jpg" style="max-width: 600px">
+               </div>
+            </td>
+            <td style="text-align: center;">
+               <div class="container">
+                  <div id="display">
+                     07:00
+                  </div>
+                  <button id="startStop" onclick="startStop()" class="button instagram">START</button><br><br>
+                  <button id="setWorkout" onclick="reset()">Set 7m Workout</button>
+                  <button id="setRest30" onclick="useRestTimer30()">Set 30s Rest</button>
+                  <button id="setRest60" onclick="useRestTimer60()">Set 1m Rest</button>
+                  <br> <br>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <!-- Image text -->
+      <div class="caption-container">
+         <p id="caption"></p>
+      </div>
+      <!-- Thumbnail images -->
+      <div class="row">
+         <div class="column">
+            <img class="demo cursor active" src="./workouts/workouts-01.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Workouts">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-02.jpg" style="width:100%" onclick="currentSlide(2)" alt="Week 1 & 3 | Legs & Cardio">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-03.jpg" style="width:100%" onclick="currentSlide(3)" alt="Week 1 & 3 | Arms & Abs">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-04.jpg" style="width:100%" onclick="currentSlide(4)" alt="Week 1 & 3 | Full Body">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-05.jpg" style="width:100%" onclick="currentSlide(5)" alt="Week 2 & 4 | Legs & Cardio">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-06.jpg" style="width:100%" onclick="currentSlide(6)" alt="Week 2 & 4 | Arms & Abs">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-07.jpg" style="width:100%" onclick="currentSlide(7)" alt="Week 2 & 4 | Full Body">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-08.jpg" style="width:100%" onclick="currentSlide(8)" alt="Week 5 & 7 | Legs & Cardio">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-09.jpg" style="width:100%" onclick="currentSlide(9)" alt="Week 5 & 7 | Arms & Abs">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-10.jpg" style="width:100%" onclick="currentSlide(10)" alt="Week 5 & 7 | Abs & Cardio">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-11.jpg" style="width:100%" onclick="currentSlide(11)" alt="Week 6 & 8 | Arms & Abs">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-12.jpg" style="width:100%" onclick="currentSlide(12)" alt="Week 6 & 8 | Arms & Cardio">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-13.jpg" style="width:100%" onclick="currentSlide(13)" alt="Week 6 & 8 | Legs & Cardio">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-14.jpg" style="width:100%" onclick="currentSlide(14)" alt="Week 9 & 11 | Legs">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-15.jpg" style="width:100%" onclick="currentSlide(15)" alt="Week 9 & 11 | Arms">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-16.jpg" style="width:100%" onclick="currentSlide(16)" alt="Week 9 & 11 | Abs">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-17.jpg" style="width:100%" onclick="currentSlide(17)" alt="Week 10 & 12 | Legs">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-18.jpg" style="width:100%" onclick="currentSlide(18)" alt="Week 10 & 12 | Arms">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="./workouts/workouts-19.jpg" style="width:100%" onclick="currentSlide(19)" alt="Week 10 & 12 | Abs">
+         </div>
+      </div>
+      </div>
+   </body>
+</html>
